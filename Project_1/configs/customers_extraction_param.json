@@ -1,0 +1,20 @@
+{
+  "param": 
+        {
+          
+          "source_type":"file",
+          "file_type":"csv",
+          "source_file_name":"",
+          "source_file_dir":"",
+          "source_schema_name":"",
+          "surce_table_name":"",
+          "basic_mapping":"true",
+          "custom_mapping_func_nm":"",
+          "target_type":"file",
+          "target_file_nm":"",
+          "target_file_dir":"",
+          "target_schema_name":"",
+          "target_table_name":""
+          
+        }
+}
