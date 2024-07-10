@@ -1,6 +1,5 @@
 # Databricks notebook source
 
-
 # parameter details that we will use after parsing the parameter file created in json format in the configs dir
 
 # source_type: Choose from the value ("file","table")
@@ -20,8 +19,9 @@
 
 # COMMAND ----------
 
-# MAGIC %run "Data_ingestion_generic_framework/Functions/read_source_files"
-# MAGIC %run "Data_ingestion_generic_framework/Functions/write_parquet"
+# MAGIC %run "read_source_files"
+# MAGIC %run "write_parquet"
+# MAGIC
 
 # COMMAND ----------
 
@@ -36,8 +36,8 @@ def create_full_file_name(params,sequence_date):
     return file_name
 
 # READ DATA FROM A SOURCE FILE AND WRITE IT INTO THE BRONZE ZONE
-def bronze_2_silver(params,spark,sequence_date):
-    param_json=json.loads(params)
+def bronze_2_silver(params_file,spark,sequence_date):
+    param_json=json.loads(params_file)
     source_file_options=params["source_file_options"]
     target_file_options=params["target_file_options"]
 
@@ -45,30 +45,30 @@ def bronze_2_silver(params,spark,sequence_date):
     file_name=create_full_file_name(params,sequence_date,file_options)
 
     # CHOOSE THE FILE TYPE WE WANT TO PROCESS
-    if(param_json["source_type"]=="file" and param_json["file_type"]="csv"):
+    if(param_json["source_type"]=="file" and param_json["file_type"]=="csv"):
          sourceDf=read_csv(spark,file_name,source_file_options)
     
-    if(param_json["source_type"]=="file" and param_json["file_type"]="json"):
-         sourceDf=read_csv(spark,file_name,source_file_options)
+    if(param_json["source_type"]=="file" and param_json["file_type"]=="json"):
+         sourceDf=read_json(spark,file_name,source_file_options)
 
-    if(param_json["source_type"]=="file" and param_json["file_type"]="text"):
-         sourceDf=read_csv(spark,file_name,source_file_options)
+    if(param_json["source_type"]=="file" and param_json["file_type"]=="text"):
+         sourceDf=read_text(spark,file_name,source_file_options)
     
-    if(param_json["source_type"]=="file" and param_json["file_type"]="xml"):
-         sourceDf=read_csv(spark,file_name,source_file_options)
+    if(param_json["source_type"]=="file" and param_json["file_type"]=="xml"):
+         sourceDf=read_xml(spark,file_name,source_file_options)
 
-    if(param_json["source_type"]=="file" and param_json["file_type"]="excel"):
-         sourceDf=read_csv(spark,file_name,source_file_options)
+    if(param_json["source_type"]=="file" and param_json["file_type"]=="excel"):
+         sourceDf=read_excel(spark,file_name,source_file_options)
 
 
     #CHOOSE THE CUSTOM FUNCTION FOR CUSTOM MAPPING THAT YOU WANT TO PASS -- placeholder for future development
 
     #DEFAULT MAPPING 
     
-
+     writeDf=sourceDf
 
     #WRITE THE DATA INTO THE TARGET 
-      write_parquet(spark,params,target_file_options)
+      write_parquet(writeDf,params,target_file_options)
 
         
 

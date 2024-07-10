@@ -4,17 +4,22 @@
           
           "source_type":"file",
           "file_type":"csv",
-          "source_file_name":"",
-          "source_file_dir":"",
+          "pattern_flag":"N",
+          "source_file_name":"customers_YYYYMMDD.csv",
+          "source_file_dir":"/mnt/source",
           "source_schema_name":"",
           "surce_table_name":"",
           "basic_mapping":"true",
           "custom_mapping_func_nm":"",
+          "target_mode":"serial",
           "target_type":"file",
-          "target_file_nm":"",
-          "target_file_dir":"",
+          "add_timestamp_flag":"Y",
+          "target_file_nm":"customers",
+          "target_file_dir":"/mnt/bronze",
           "target_schema_name":"",
-          "target_table_name":""
+          "target_table_name":"",
+          "source_file_options":{"header": "true","inferSchema": "true", "delimiter": ","},
+          "target_file_options":{ "compression": "snappy","mode": "overwrite"}
           
         }
 }
