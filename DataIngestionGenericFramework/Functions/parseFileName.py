@@ -11,7 +11,7 @@ def create_source_file_name(param_json,sequence_date):
         
         file_name=param_json["source_file_dir"]+"/"+filename.replace(param_json["source_timestamp_pattern"],sequence_date)
 
-        print("Source File name : ", filename)
+        print("Source File name : ", file_name)
 
     try:
         if os.path.exists(file_name):
@@ -28,13 +28,10 @@ def create_target_file_name(param_json,sequence_date):
     filename=param_json["target_file_name"]
     if not sequence_date:
         file_name=param_json["target_file_dir"]+"/"+param_json["target_file_name"]
-        
-    elif sequence_date and param_json["target_mode"]=="serial" :
-        file_name=param_json["target_file_dir"]+"/"+filename.replace(param_json["target_timestamp_pattern"],sequence_date)
     else:
-        file_name=param_json["target_file_dir"]+"/"+filename+"/"+sequence_date
+        file_name=param_json["target_file_dir"]+"/"+filename+"/"+str(sequence_date)
     
-    print("Target File name : ", filename)
+   
 
     try:
         if os.path.exists(file_name):

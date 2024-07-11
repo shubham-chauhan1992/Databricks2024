@@ -22,6 +22,7 @@
           "target_file_name":"name of the file and also add the timestamp format in the file as given in the file name . E.g. ->  customers_YYYYMMDD.parquet", 
           "target_file_dir":"target file directory path",
           "target_schema_name":"target schema name in case TARGET_TYPE parameter value is table ",
+          "write_mode":"Possible value are overwrite/append",
           "target_table_name":"target table name in case TARGET_TYPE parameter value is table ",
           "source_file_options":"different options that can be configured while reading a file . E.g. ->{'header': 'true','inferSchema': 'true', 'delimiter': ','}",
           "target_file_options":"different options that can be configured while writing a file . E.g. -> { 'compression': 'snappy','mode': 'overwrite'}"
@@ -35,7 +36,7 @@
           "timestamp_flag":"Y",
           "source_timestamp_pattern":"YYYYMMDD",
           "source_file_name":"customers_YYYYMMDD.csv",
-          "source_file_dir":"/FileStore/tables/",
+          "source_file_dir":"/FileStore/tables",
           "source_schema_name":"",
           "surce_table_name":"",
           "basic_mapping":"true",
@@ -43,10 +44,11 @@
           "target_mode":"serial",
           "target_type":"file",
           "target_timestamp_pattern":"YYYYMMDD",
-          "target_file_name":"customers_YYYYMMDD.parquet", 
+          "target_file_name":"customers", 
           "target_file_dir":"/FileStore/tables/bronze",
           "target_schema_name":"",
           "target_table_name":"",
+          "write_mode":"overwrite",
           "source_file_options":{"header": "true","inferSchema": "true", "delimiter": ","},
           "target_file_options":{ "compression": "snappy","mode": "overwrite"}
         }

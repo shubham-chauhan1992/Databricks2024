@@ -55,8 +55,8 @@ def bronze_2_silver(param_json,spark,sequence_date):
     if(param_json["source_type"]=="file" and param_json["file_type"]=="text"):
          sourceDf=read_text(spark,file_name,source_file_options)
     
-    if(param_json["source_type"]=="file" and param_json["file_type"]=="xml"):
-         sourceDf=read_xml(spark,file_name,source_file_options)
+    #if(param_json["source_type"]=="file" and param_json["file_type"]=="xml"):
+         #sourceDf=read_xml(spark,file_name,source_file_options)
 
     if(param_json["source_type"]=="file" and param_json["file_type"]=="excel"):
          sourceDf=read_excel(spark,file_name,source_file_options)
@@ -69,7 +69,7 @@ def bronze_2_silver(param_json,spark,sequence_date):
     #CREATE TARGET FILE NAME
     file_name=create_target_file_name(param_json,sequence_date)
     #WRITE THE DATA INTO THE TARGET
-    write_target(writeDf,file_name,target_file_options)
+    write_target(param_json,writeDf,file_name,target_file_options)
 
         
 
