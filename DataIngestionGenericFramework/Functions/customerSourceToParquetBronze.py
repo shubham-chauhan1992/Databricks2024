@@ -19,30 +19,31 @@
 
 # COMMAND ----------
 
-# MAGIC %run "read_source_files"
-# MAGIC %run "write_parquet"
+# MAGIC %run "./readSourceFiles"
+# MAGIC
+# MAGIC
 # MAGIC
 
 # COMMAND ----------
 
-import json
+# MAGIC %run "./parseFileName"
 
-# CREATE A FULL FILE NAME 
-def create_full_file_name(params,sequence_date):
-    if not sequence_date:
-        file_name=param_json["source_file_dir"]+"/"+param_json["source_file_name"]
-    else:
-        file_name=param_json["source_file_dir"]+"/"+split(param_json["source_file_name"],".")[0]+"_"+ sequence_date +"."+param_json["file_type"]
-    return file_name
+# COMMAND ----------
+
+# MAGIC %run "./writeParquet"
+
+# COMMAND ----------
+
+
 
 # READ DATA FROM A SOURCE FILE AND WRITE IT INTO THE BRONZE ZONE
-def bronze_2_silver(params_file,spark,sequence_date):
-    param_json=json.loads(params_file)
-    source_file_options=params["source_file_options"]
-    target_file_options=params["target_file_options"]
+def bronze_2_silver(param_json,spark,sequence_date):
+  
+    source_file_options=param_json["source_file_options"]
+    target_file_options=param_json["target_file_options"]
 
     # CREATE FILE NAME
-    file_name=create_full_file_name(params,sequence_date,file_options)
+    file_name=create_source_file_name(param_json,sequence_date)
 
     # CHOOSE THE FILE TYPE WE WANT TO PROCESS
     if(param_json["source_type"]=="file" and param_json["file_type"]=="csv"):
@@ -64,11 +65,11 @@ def bronze_2_silver(params_file,spark,sequence_date):
     #CHOOSE THE CUSTOM FUNCTION FOR CUSTOM MAPPING THAT YOU WANT TO PASS -- placeholder for future development
 
     #DEFAULT MAPPING 
-    
-     writeDf=sourceDf
-
-    #WRITE THE DATA INTO THE TARGET 
-      write_parquet(writeDf,params,target_file_options)
+    writeDf=sourceDf
+    #CREATE TARGET FILE NAME
+    file_name=create_target_file_name(param_json,sequence_date)
+    #WRITE THE DATA INTO THE TARGET
+    write_target(writeDf,file_name,target_file_options)
 
         
 

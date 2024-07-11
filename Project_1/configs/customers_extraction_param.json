@@ -1,25 +1,53 @@
 {
+  "comments":
+            {
+          "parameter_info":"THE BELOW KEY VALUE PAIRS TALKS ABOUT THE PARAMETERS THAT WE CAN CONFIGURE , THEIR USAGE AND THEIR POSSIBLE VALUES THAT CAN BE SET FOR PROCESSING DIFFERENT KIND OF FILES AND LAND THEM TO THE BRONZE ZONE ",
+          "source_type":"Possible values are -> file/table",
+          "file_type":"Possible values are -> csv/xml/excel/json/text",
+          "pattern_flag":"N",
+          "timestamp_flag":"Y",
+
+          "source_timestamp_pattern":"possible value is the format of tmestamp used in a file name . E.g. -> YYYYMMDD/YYYYMM/YYMMDD/DDMMYYY",
+
+          "source_file_name": "name of the file and also add the timestamp format in the file as given in the file name . E.g. ->  customers_YYYYMMDD.csv",
+
+          "source_file_dir":"source file directory path",
+          "source_schema_name":"Source schema name in case SOURCE_TYPE parameter value is table ",
+          "surce_table_name":"Source table name in case SOURCE_TYPE parameter value is table ",
+          "basic_mapping":"Possible values are true/false",
+          "custom_mapping_func_nm":"Name of a custom function that you will create before loading the data into target",
+          "target_mode":"Possible values are -> serial/parallel",
+          "target_type":"Possible values are -> file/table",
+          "target_timestamp_pattern":"possible value is the format of tmestamp used in a file name . E.g. -> YYYYMMDD/YYYYMM/YYMMDD/DDMMYYY",
+          "target_file_name":"name of the file and also add the timestamp format in the file as given in the file name . E.g. ->  customers_YYYYMMDD.parquet", 
+          "target_file_dir":"target file directory path",
+          "target_schema_name":"target schema name in case TARGET_TYPE parameter value is table ",
+          "target_table_name":"target table name in case TARGET_TYPE parameter value is table ",
+          "source_file_options":"different options that can be configured while reading a file . E.g. ->{'header': 'true','inferSchema': 'true', 'delimiter': ','}",
+          "target_file_options":"different options that can be configured while writing a file . E.g. -> { 'compression': 'snappy','mode': 'overwrite'}"
+            },
+
   "param": 
         {
-          
-          "source_type":"file",
+         "source_type":"file",
           "file_type":"csv",
           "pattern_flag":"N",
+          "timestamp_flag":"Y",
+          "source_timestamp_pattern":"YYYYMMDD",
           "source_file_name":"customers_YYYYMMDD.csv",
-          "source_file_dir":"/mnt/source",
+          "source_file_dir":"/FileStore/tables/",
           "source_schema_name":"",
           "surce_table_name":"",
           "basic_mapping":"true",
           "custom_mapping_func_nm":"",
           "target_mode":"serial",
           "target_type":"file",
-          "add_timestamp_flag":"Y",
-          "target_file_nm":"customers",
-          "target_file_dir":"/mnt/bronze",
+          "target_timestamp_pattern":"YYYYMMDD",
+          "target_file_name":"customers_YYYYMMDD.parquet", 
+          "target_file_dir":"/FileStore/tables/bronze",
           "target_schema_name":"",
           "target_table_name":"",
           "source_file_options":{"header": "true","inferSchema": "true", "delimiter": ","},
           "target_file_options":{ "compression": "snappy","mode": "overwrite"}
-          
         }
 }
