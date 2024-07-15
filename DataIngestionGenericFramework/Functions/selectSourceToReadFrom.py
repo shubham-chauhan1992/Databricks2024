@@ -1,5 +1,4 @@
 # Databricks notebook source
-
 # parameter details that we will use after parsing the parameter file created in json format in the configs dir
 
 # source_type: Choose from the value ("file","table")
@@ -30,18 +29,14 @@
 
 # COMMAND ----------
 
-# MAGIC %run "./writeParquet"
-
-# COMMAND ----------
-
 
 
 # READ DATA FROM A SOURCE FILE AND WRITE IT INTO THE BRONZE ZONE
-def bronze_2_silver(param_json,spark,sequence_date):
+def selectSourceFormat(param_json,spark,sequence_date):
   
     source_file_options=param_json["source_file_options"]
-    target_file_options=param_json["target_file_options"]
-
+    
+    
     # CREATE FILE NAME
     file_name=create_source_file_name(param_json,sequence_date)
 
@@ -63,13 +58,10 @@ def bronze_2_silver(param_json,spark,sequence_date):
 
 
     #CHOOSE THE CUSTOM FUNCTION FOR CUSTOM MAPPING THAT YOU WANT TO PASS -- placeholder for future development
+    return sourceDf
 
-    #DEFAULT MAPPING 
-    writeDf=sourceDf
-    #CREATE TARGET FILE NAME
-    file_name=create_target_file_name(param_json,sequence_date)
-    #WRITE THE DATA INTO THE TARGET
-    write_target(param_json,writeDf,file_name,target_file_options)
+   
+    
 
         
 

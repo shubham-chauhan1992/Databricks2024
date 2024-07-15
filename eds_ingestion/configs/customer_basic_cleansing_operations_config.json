@@ -1,0 +1,188 @@
+{
+  "Index":
+  { 
+  "NULL":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "BLANK":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to blank value in the source field'}",
+  "TRIM":"{'check_type':'single_step','check':'Y','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "DECIMAL_STRIP":"{'check_type':'single_step','check':'N','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "IS_STRING":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_DECIMAL":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_ALPHA_NUMERIC":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "HAS_SPECIAL_CHARACTER":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to special character in the source field'}",
+  "CAST_TO_DECIMAL":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_STRING":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATE":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATETIME":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}"
+  },
+
+
+"Customer Id":  { 
+  "NULL":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "BLANK":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to blank value in the source field'}",
+  "TRIM":"{'check_type':'single_step','check':'Y','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "DECIMAL_STRP":"{'check_type':'single_step','check':'N','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "IS_STRING":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_DECIMAL":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_ALPHA_NUMERIC":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "HAS_SPECIAL_CHARACTER":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to special character in the source field'}",
+  "CAST_TO_DECIMAL":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_STRING":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATE":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATETIME":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}"
+  },
+
+ "First Name":   { 
+  "NULL":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "BLANK":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to blank value in the source field'}",
+  "TRIM":"{'check_type':'single_step','check':'Y','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "DECIMAL_STRP":"{'check_type':'single_step','check':'N','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "IS_STRING":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_DECIMAL":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_ALPHA_NUMERIC":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "HAS_SPECIAL_CHARACTER":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to special character in the source field'}",
+  "CAST_TO_DECIMAL":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_STRING":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATE":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATETIME":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}"
+  }, 
+
+ "Last Name":   { 
+  "NULL":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "BLANK":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to blank value in the source field'}",
+  "TRIM":"{'check_type':'single_step','check':'Y','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "DECIMAL_STRP":"{'check_type':'single_step','check':'N','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "IS_STRING":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_DECIMAL":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_ALPHA_NUMERIC":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "HAS_SPECIAL_CHARACTER":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to special character in the source field'}",
+  "CAST_TO_DECIMAL":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_STRING":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATE":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATETIME":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}"
+  }, 
+
+
+ "Company":   { 
+  "NULL":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "BLANK":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to blank value in the source field'}",
+  "TRIM":"{'check_type':'single_step','check':'Y','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "DECIMAL_STRP":"{'check_type':'single_step','check':'N','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "IS_STRING":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_DECIMAL":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_ALPHA_NUMERIC":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "HAS_SPECIAL_CHARACTER":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to special character in the source field'}",
+  "CAST_TO_DECIMAL":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_STRING":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATE":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATETIME":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}"
+  }, 
+
+ "City":   { 
+  "NULL":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "BLANK":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to blank value in the source field'}",
+  "TRIM":"{'check_type':'single_step','check':'Y','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "DECIMAL_STRP":"{'check_type':'single_step','check':'N','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "IS_STRING":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_DECIMAL":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_ALPHA_NUMERIC":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "HAS_SPECIAL_CHARACTER":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to special character in the source field'}",
+  "CAST_TO_DECIMAL":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_STRING":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATE":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATETIME":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}"
+  }, 
+
+
+ "Country":   { 
+  "NULL":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "BLANK":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to blank value in the source field'}",
+  "TRIM":"{'check_type':'single_step','check':'Y','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "DECIMAL_STRP":"{'check_type':'single_step','check':'N','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "IS_STRING":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_DECIMAL":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_ALPHA_NUMERIC":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "HAS_SPECIAL_CHARACTER":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to special character in the source field'}",
+  "CAST_TO_DECIMAL":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_STRING":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATE":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATETIME":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}"
+  }, 
+
+
+ "Phone 1":   { 
+  "NULL":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "BLANK":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to blank value in the source field'}",
+  "TRIM":"{'check_type':'single_step','check':'Y','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "DECIMAL_STRP":"{'check_type':'single_step','check':'N','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "IS_STRING":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_DECIMAL":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_ALPHA_NUMERIC":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "HAS_SPECIAL_CHARACTER":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to special character in the source field'}",
+  "CAST_TO_DECIMAL":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_STRING":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATE":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATETIME":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}"
+  }, 
+
+ "Phone 2":  { 
+  "NULL":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "BLANK":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to blank value in the source field'}",
+  "TRIM":"{'check_type':'single_step','check':'Y','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "DECIMAL_STRP":"{'check_type':'single_step','check':'N','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "IS_STRING":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_DECIMAL":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_ALPHA_NUMERIC":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "HAS_SPECIAL_CHARACTER":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to special character in the source field'}",
+  "CAST_TO_DECIMAL":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_STRING":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATE":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATETIME":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}"
+  }, 
+
+ "Email":   { 
+  "NULL":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "BLANK":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to blank value in the source field'}",
+  "TRIM":"{'check_type':'single_step','check':'Y','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "DECIMAL_STRP":"{'check_type':'single_step','check':'N','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "IS_STRING":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_DECIMAL":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_ALPHA_NUMERIC":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "HAS_SPECIAL_CHARACTER":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to special character in the source field'}",
+  "CAST_TO_DECIMAL":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_STRING":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATE":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATETIME":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}"
+  }, 
+
+ "Subscription Date":   { 
+  "NULL":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "BLANK":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to blank value in the source field'}",
+  "TRIM":"{'check_type':'single_step','check':'Y','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "DECIMAL_STRP":"{'check_type':'single_step','check':'N','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "IS_STRING":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_DECIMAL":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_ALPHA_NUMERIC":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "HAS_SPECIAL_CHARACTER":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to special character in the source field'}",
+  "CAST_TO_DECIMAL":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_STRING":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATE":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATETIME":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}"
+  }, 
+
+ "Website":   { 
+  "NULL":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "BLANK":"{'check_type':'multi_step','check':'Y','format':'','drop':'N',default_value:'AAA',collect_reject:'N','error_description':'record rejected due to blank value in the source field'}",
+  "TRIM":"{'check_type':'single_step','check':'Y','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "DECIMAL_STRP":"{'check_type':'single_step','check':'N','format':'','drop':'',default_value:'',collect_reject:'','error_description':''}",
+  "IS_STRING":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_DECIMAL":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "IS_ALPHA_NUMERIC":"{'check_type':'multi_step','check':'N','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to null value in the sourec field'}",
+  "HAS_SPECIAL_CHARACTER":"{'check_type':'multi_step','check':'Y','format':'','drop':'Y',collect_reject:'N','error_description':'record rejected due to special character in the source field'}",
+  "CAST_TO_DECIMAL":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_STRING":"{'check_type':'single_step','check':'Y','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATE":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}",
+  "CAST_TO_DATETIME":"{'check_type':'single_step','check':'N','format':'','drop':'',collect_reject:'','error_description':''}"
+  }
+
+
+ }

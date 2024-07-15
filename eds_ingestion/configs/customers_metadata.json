@@ -1,0 +1,13 @@
+ {
+  "param":
+  { "timestamp_flag":"N",
+    "source_type":"file",
+    "file_type":"excel",
+    "source_file_name":"customers_e_2_e_mapping.xlsx",
+    "source_file_dir":"/FileStore/tables/metadata",
+    "target_file_name":"customer_basic_operations.json",
+    "target_file_dir":"/eds_ingestion/defaultTransformationConfig",
+    "source_file_options":{"sheet_name": "file_metadata","header": "true","inferSchema": "true"},
+    "workspace_name":"Databricks2024"
+  }
+ }

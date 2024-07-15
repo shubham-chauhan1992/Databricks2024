@@ -1,6 +1,7 @@
 # Databricks notebook source
-
 import os
+import pandas as pd
+
 
 def read_csv(spark,file_name,source_file_options):
     print("Loading Source file in dataframe with following options " , source_file_options )
@@ -9,7 +10,8 @@ def read_csv(spark,file_name,source_file_options):
 
 def read_excel(spark,file_name,source_file_options):
     print("Loading Source file in dataframe with following options " , source_file_options )
-    dataframe = spark.read.format("com.crealytics.spark.excel").options(**source_file_options).load(file_name)
+    excelDf= pd.read_excel(file_name.replace("dbfs:","/dbfs/"))
+    dataframe=spark.createDataFrame(excelDf)
     return dataframe
 
 def read_json(spark,file_name,source_file_options):

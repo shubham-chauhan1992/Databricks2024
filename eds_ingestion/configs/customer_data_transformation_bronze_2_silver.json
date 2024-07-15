@@ -50,6 +50,7 @@
           "target_table_name":"",
           "write_mode":"overwrite",
           "source_file_options":{"header": "true","inferSchema": "true", "delimiter": ","},
-          "target_file_options":{ "compression": "snappy","mode": "overwrite"}
+          "target_file_options":{ "compression": "snappy"}
+         
         }
 }
